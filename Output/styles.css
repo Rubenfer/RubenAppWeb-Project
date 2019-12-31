@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    font-family: -apple-system, "Helvetica", serif;
+}
+
+header nav li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 5px;
+    padding: 2px;
+}
+
+header a {
+    text-decoration: none;
+    color: azure;
+}
+
+section {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+}
+
+footer {
+    margin: 5px;
+    font-size: 0.7em;
+}
+
+.main-section {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.featured-app {
+    display: grid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    padding: 5%;
+}
+
+.featured-app img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 15px;
+    margin: 10px;
+}
+
+.download-btn {
+    background-color: rgba(133,217,239,0.4);
+    border-radius: 30px;
+    color: darkblue;
+}
+
+.more-info-btn {
+    border: 2px solid;
+    border-color: rgb(133,217,239);
+    color: darkblue;
+}
+
+#header-div {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(30,100,245,0.9);
+}
+
+#main-text-div {
+    padding: 50px 10px;
+}
+
+#main-button {
+    color: darkblue;
+    border-radius: 30px;
+    background-color: azure;
+}
+
+#main-img-div {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+#img-icons {
+    display: flex;
+    flex-flow: column;
+    max-width: 70%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;    
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+/* Responsive */
+
+@media(max-width: 600px) {
+    .featured-app {
+        display: inherit;
+    }
+}
