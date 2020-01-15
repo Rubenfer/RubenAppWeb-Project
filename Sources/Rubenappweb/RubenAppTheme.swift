@@ -82,7 +82,6 @@ private struct RubenAppHTMLFactory: HTMLFactory {
                     .id("header-div"),
                     .nav(
                         .ul(
-                            .li(.a(.href("/"), "HOME")),
                             .li(.a(.href("mailto:contacto@ruben.app"), "Contacto"))
                         )
                     ),

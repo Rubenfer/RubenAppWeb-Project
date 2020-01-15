@@ -59,18 +59,17 @@ footer {
     font-size: 1em;
     padding: 15px;
     margin: 10px;
+    color: darkblue;
 }
 
 .download-btn {
     background-color: rgba(133,217,239,0.4);
     border-radius: 30px;
-    color: darkblue;
 }
 
 .more-info-btn {
     border: 2px solid;
     border-color: rgb(133,217,239);
-    color: darkblue;
 }
 
 #header-div {
@@ -104,7 +103,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    height: auto;    
+    height: auto;
+    max-height: 50vh;
     margin-top: auto;
     margin-bottom: 0px;
 }
@@ -114,5 +114,20 @@ footer {
 @media(max-width: 600px) {
     .featured-app {
         display: inherit;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    #header-div {
+        background-color: rgba(15,15,110,0.9);
+    }
+    
+    .btn {
+        color: aliceblue;
     }
 }
